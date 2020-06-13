@@ -23,6 +23,7 @@ Android AAR 项目集成
     	    InitWebView.getInstance().initView(getApplicationContext());
 
 四 . 进入课堂直播间参数说明
+
     Intent intent = JoinEducationActivity.createIntent(this,
     	           userId,
     	           safeKey,
@@ -30,7 +31,6 @@ Android AAR 项目集成
     	           expiresIn,
     	           classId);
     	   startActivity(intent);
-
     	userId :  用户id
     	safeKey : 用户safeKey
     	timeStamp : 用户时间戳

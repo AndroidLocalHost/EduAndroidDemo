@@ -16,8 +16,8 @@ Android AAR 项目集成
 
     在本地 Application 中初始化参数
     	1 . 设置接口域名 , 三体接口域名 : https://api3tclass.3ttech.cn
-    		RoomManager.getInstance().setBaseUrl("请求接口链接");
+            RoomManager.getInstance().setBaseUrl("请求接口链接");
     	2 . 初始化日志打印工具
-            LogAarUtil.initLogUtil(getApplicationContext());
+    	    LogAarUtil.initLogUtil(getApplicationContext());
     	3 . 初始化白板功能
-            InitWebView.getInstance().initView(getApplicationContext());
+    	    InitWebView.getInstance().initView(getApplicationContext());

@@ -1,18 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.aar.tttdemoaar.room.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ClassId : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+
+            <EditText
+                android:id="@+id/et_enter_room_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="262016"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="safeKey : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+
+            <EditText
+                android:id="@+id/et_enter_safekey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="e5a3d5f23a018469b3f2df94c1eae5cb"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+
+            <EditText
+                android:id="@+id/et_enter_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1589273022"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="expiresIn : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+
+            <EditText
+                android:id="@+id/et_enter_expiresIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7200" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="userId : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+
+            <EditText
+                android:id="@+id/et_enter_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="579293"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_enter_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="进入房间" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

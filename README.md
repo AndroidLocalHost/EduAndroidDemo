@@ -11,7 +11,7 @@ Android AAR 项目集成
 
    将libs下aar包放在对应的工程目录下,并添加引用
 
-    implementation files('libs/AAR1包名.9.6_Full_2020_05_17.aar')
+    implementation files('libs/AAR1包名.aar')
     implementation files('libs/AAR2包名.aar')
 
 二 . 依赖第三方引用
